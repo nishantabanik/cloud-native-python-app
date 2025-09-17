@@ -1,3 +1,8 @@
+argo-cd:
+  configs:
+    cm:
+      timeout.reconciliation: "15s"
+
 redis-ha:
   enabled: false
 
