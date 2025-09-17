@@ -8,7 +8,8 @@ def details():
     return jsonify({
         'message': 'Hello World',
         'time': datetime.datetime.now().strftime("%I:%M%:%S%p on %B %d, %Y"),
-        'hostname': socket.gethostname()
+        'hostname': socket.gethostname(),
+        'message' : 'You are doing a great job, my friend!!'
         })
 
 @app.route('/api/v1/healthz')
@@ -17,7 +18,8 @@ def health():
     return jsonify({
         'status': 'It is UP',
         'time': datetime.datetime.now().strftime("%I:%M%:%S%p on %B %d, %Y"),
-        'hostname': socket.gethostname()
+        'hostname': socket.gethostname(),
+        'message' : 'You are doing an AWESOME job, my friend!!'
         })
 
 if __name__ == '__main__':
